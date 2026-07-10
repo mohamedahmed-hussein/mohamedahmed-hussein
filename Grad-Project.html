@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head><title>Graduation Project Details</title></head>
+<head>
+    <title>Graduation Project Details</title>
+    <style>
+        /* Matches the font and background of your main site */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        /* This is the code that turns blue text into a styled button */
+        .btn {
+            display: inline-block;
+            background: #1a252c;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none; /* Removes the default blue underline */
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        /* Makes the button light blue when you hover over it */
+        .btn:hover {
+            background: #4da8da; 
+        }
+        
+        /* Adds a nice shadow to your images and keeps them from overflowing */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-top: 4px solid #4da8da;
+        }
+    </style>
+</head>
 <body>
     <h1>Automatic 2-DOF GTAW Seam-Welding Machine</h1>
-
+    
     <h2>1. The Project Poster</h2>
-    <img src="Grad.project poster 90x150 cm.png" alt="Graduation Poster" width="800">
-
+    <img src="Grad.project poster 90x150 cm.png" alt="Graduation Poster">
+    
     <h2>2. ISPSoft PLC Logic</h2>
-    <img src="plc-logic.png" alt="PLC Code" width="800">
-
+    <img src="plc-logic.png" alt="PLC Code">
+    
     <h2>3. DOPSoft HMI Interface</h2>
-    <img src="hmi-screen.png" alt="HMI Screen" width="800">
-
-    <br><br>
-    <a href="index.html">⬅ Back to Portfolio</a>
+    <img src="hmi-screen.png" alt="HMI Screen">
+    
+    <br>
+    <!-- By adding class="btn", this link now uses the button styling from above -->
+    <a href="index.html" class="btn">⬅ Back to Portfolio</a>
+    
 </body>
 </html>
