@@ -3,7 +3,6 @@
 <head>
     <title>Graduation Project Details</title>
     <style>
-        /* Matches the font and background of your main site */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: #f4f7f6;
@@ -13,51 +12,55 @@
             margin: 0 auto;
         }
         
-        /* This is the code that turns blue text into a styled button */
         .btn {
             display: inline-block;
             background: #1a252c;
             color: #ffffff;
             padding: 10px 20px;
-            text-decoration: none; /* Removes the default blue underline */
+            text-decoration: none;
             border-radius: 4px;
             font-weight: bold;
             transition: background 0.3s ease;
-            margin-top: 20px;
-            margin-bottom: 40px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
         
-        /* Makes the button light blue when you hover over it */
         .btn:hover {
             background: #4da8da; 
         }
-        
-        /* Adds a nice shadow to your images and keeps them from overflowing */
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            border-top: 4px solid #4da8da;
+
+        /* Added a different style for the 'Back' button to make it distinct */
+        .btn-back {
+            background: #eef2f5;
+            color: #333;
+            border: 2px solid #ccc;
+            margin-top: 40px;
+        }
+
+        .btn-back:hover {
+            background: #d5d9dc;
         }
     </style>
 </head>
 <body>
     <h1>Automatic 2-DOF GTAW Seam-Welding Machine</h1>
+    <p>Select a document below to view the technical details in a new tab.</p>
     
     <h2>1. The Project Poster</h2>
-    <img src="Grad.project poster 90x150 cm.png" alt="Graduation Poster">
+    <!-- target="_blank" is the code that forces this to open in a new browser tab -->
+    <a href="Grad.project poster 90x150 cm.png" target="_blank" class="btn">📄 View Project Poster</a>
     
     <h2>2. ISPSoft PLC Logic</h2>
-    <img src="plc-logic.png" alt="PLC Code">
+    <a href="plc-logic.png" target="_blank" class="btn">⚙️ View PLC Logic Code</a>
     
     <h2>3. DOPSoft HMI Interface</h2>
-    <img src="hmi-screen.png" alt="HMI Screen">
+    <a href="hmi-screen.png" target="_blank" class="btn">🖥️ View HMI Interface</a>
     
     <br>
-    <!-- By adding class="btn", this link now uses the button styling from above -->
-    <a href="index.html" class="btn">⬅ Back to Portfolio</a>
+    <hr style="margin-top: 40px; border: 1px solid #ddd;">
+    
+    <!-- The back button returns them to the main index.html page -->
+    <a href="index.html" class="btn btn-back">⬅ Back to Portfolio</a>
     
 </body>
 </html>
